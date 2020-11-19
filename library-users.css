@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* set body font */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+/* Start with the nav-bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: teal;
+    position: relative;
+    z-index: 1;
+}
+nav a {
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* Set the drop-down */
+  .drop-down{
+      float: left;
+     
+  }
+  /* Dropdown button */
+.drop-down, .drop-down button, .nav-search  {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Dropdown content (hidden by default) */
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+.drop-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .drop-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .drop-down:hover .drop-content {
+      
+    display: block;
+    border-radius: 5px;
+    position: relative;
+  }
+  #search, .nav-search button{
+      padding: 8px;
+    border-radius: 5px;
+    border: thin solid;
+  
+  }
+
+  .nav-search button{
+    cursor: pointer;
+  }
+
+  /* design the container */
+  .container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* set body font */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+/* Start with the nav-bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: teal;
+}
+nav a {
+    float: left;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* Set the drop-down */
+  .drop-down{
+      float: left;
+     
+  }
+  /* Dropdown button */
+.drop-down, .drop-down button, .nav-search  {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Dropdown content (hidden by default) */
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+.drop-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .drop-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .drop-down:hover .drop-content {
+      
+    display: block;
+    border-radius: 5px;
+  }
+  #search, .nav-search button{
+      padding: 8px;
+    border-radius: 5px;
+    border: thin solid;
+  
+  }
+
+  .nav-search button{
+    cursor: pointer;
+  }
+
+  /* design the container */
+  .container::before{
+    content: "";
+    position: fixed;
+    background-image: url(img/woodlib.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     filter: opacity(0.3);
+     width: 500%;
+     height: 500%;
+     
+  }
+
+  .container{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      
+      text-align: center;
+  }
+  .container a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+
+  }
+  .container button{
+    border-radius: 5px;
+    outline: thick ;
+    max-width: 100%;
+    border: thick;
+    padding: 10px;
+    background: teal;
+   }
+   .container button:hover{
+opacity: 0.9;
+   }
+
+  .head{
+    max-width: 100%;
+    max-height: 100%;
+    background: rgb(54, 108, 116);
+    margin: auto;
+    border-radius: 3px;
+    color: white;
+    margin-top: 5vh;
+    position: relative;
+  }
+  .figure{
+    background: rgb(0, 151, 38);
+    margin: auto;
+  
+    max-width: 20%;
+    max-height: 20%;
+    border-radius: 50%;
+    
+  }
+
+  .first{
+   display: flex;
+    overflow-x: auto;
+    position: relative;
+    
+  }
+  table{
+    background-color: rgb(180, 235, 235);
+    margin-top: 10vh;
+    
+    
+  }
+
+     table tbody tr{
+    text-align: left;
+    
+  }
+  table tbody tr:nth-of-type(even){
+    background-color: rgb(255, 251, 196);
+  }
+
+  table tbody tr:nth-of-type(even):hover{
+    background-color:black;
+    color:  rgb(255, 251, 196);
+    cursor: pointer;
+  }
+  table thead tr{
+    text-align: center;
+  }
+
+  table thead tr:hover,   table tbody tr:hover {
+      color: rgb(180, 235, 235);
+      background-color: rgb(27, 36, 32);
+      cursor: pointer;
+
+  }
+  table tbody tr td:first-of-type, table thead tr th:first-of-type{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 5px solid rgb(49, 49, 109);
+  }
+
+
+  table tbody tr td:last-of-type, table tbody tr th:last-of-type{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+  }
+
+  table tbody tr td:nth-of-type(all), table thead tr th:nth-of-type(all){
+    border: 1px solid rgb(7, 17, 17);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width:800px) {
+    body{
+    
+     background-position-x: 40%;
+     background-position-y: -40%;
+    
+     background-repeat: no-repeat;  
+    }
+    nav{
+     display: block;
+    justify-content: start;
+     
+     background-color: teal;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  main{
+    color: green;
+    background-color: lightgreen;
+    font-size: 20px;
+    position: relative;
+    z-index: 3;
+  }
+
+ section
+ {color: red;
+  background: rgb(206, 154, 154);
+  font-size: medium;
+  font-size: x-large;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
